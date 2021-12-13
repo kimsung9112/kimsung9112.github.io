@@ -1,128 +1,253 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-    <style>
-        *{
-            padding: 0;
-            margin: 10px;
-        }
-        li{
-            list-style-type: none;
-        }
-        .clear{
-            clear: both;
-        }
-         #wrapper {
-                 width: 1015px;
-                 margin: 0 auto;
-                 border: solid 1px #cccccc; 
-                 }
-        header {
-            width: 995px;
-            height: 110px;
-            margin-top: 10px;
-            border: solid 1px #cccccc; 
-        }
-        #logo {
-            margin: 20px;
-            border-bottom: dotted 2px gray;
-            float: left;
-        }
-        #top {
-            float: right;
-            margin: 30px 20px 0 0;
-        }
-        nav {
-            width: 995px;
-            height: 70px;
-            margin-top: 10px;
-            padding-top: 10px;
-            border: solid 1px #cccccc; 
-        }
-        img{
-            width: 780px;
-            height: 380px;
-        }
-        section{
-            width: 800px;
-            height: 400px;
-            float: left;
-            margin-top: 10px;
-            border: solid 1px #cccccc;
-        }
-        nav li{
-            display: inline;
-            margin: 50px 30px;
-        }
-        aside {
-            height: 400px;
-            float: left;
-            margin-top: 10px;
-            border: solid 1px #cccccc; 
-        }
-        aside li {
-            margin-bottom: 70px;
-        }
-        footer {
-            width: 995px;
-            height: 100px;
-            border-top: solid 1px #cccccc;
-            margin-top: 20px;
-            border: solid 1px #cccccc; 
-        }
-        #address {
-            float: left;
-            margin: 30px 0 0 20px;
-        }
-        #customer {
-            float: right;
-            margin: 30px 0 0 180px;
-            padding-right: 20px;
-        }
-    </style>
+  <meta charset="utf-8">
+  <title></title>
+  <style>
+    *{margin: 0px; padding: 0px;}
+    body{
+      font-family: "맑은 고딕";
+      font-size: 15px;
+      color: #444444;
+    }
+    #logo{
+      float:left;
+      margin: 10px 0 -10px 10px;
+    }
+    #logo h1{
+      margin-top: 22px;
+      margin-left: 10px;
+      float:right;
+    }
+    #top_menu{
+      margin: 50px 10px 0 0;
+      float : right;
+      list-style-type:none;
+    }
+    #top_menu a{
+      color: black;
+    }
+    #top_menu li{
+              display: inline;
+    }
+    #main_menu{
+      color: white;
+      background-color: red;
+      list-style-type:none;
+      list-style-position:inside;
+      text-align: center;
+      width: 1178px;
+      height: 50px;
+      line-height: 40px;
+      margin-top: 15px;
+      padding: 12px;
+    }
+    #main_menu li{
+      padding: 0 20px 0 20px;
+      display: inline;
+      font-size: 20px;
+    }
+    #main_menu li a{
+      color:white;
+    }
+    main{
+          padding-top: 30px;
+          font-size: 25px;
+          background-color: black;
+          color: white;
+          text-align: center;
+					border: solid 1px #000000;
+					float: left;
+					width: 1200px;
+					height: 500px;
+	  			}
+      section{
+          margin-top: 10px;
+          padding-top: 30px;
+          font-size: 25px;
+          background-color: black;
+          color: white;
+          text-align: center;
+					border: solid 0px #000000;
+					float: left;
+					width: 1200px;
+					height: 800px;
+	  			}
+      nav{
+          padding-top: 30px;
+          font-size: 25px;
+          background-color: gray;
+          color: white;
+          text-align: center;
+					float: left;
+					width: 1200px;
+					height: 50px;
+	  			}
+      footer{
+            padding-top: 30px;
+            font-size: 10px;
+            background-color: red;
+            color: white;
+            text-align: center;
+  					float: left;
+  					width: 1200px;
+  					height: 50px;
+  	  			}
+      fieldset{
+  						 float: left;
+  						 margin: 0 0 20px 40px;
+  						 width: 550px;
+  						 height: 750px;
+               border: none;
+  						}
+              fieldset a{
+                color: skyblue;
+              }
+      #one{
+           float: right;
+           margin: 0 40px 20px 0px;
+           width: 550px;
+           height: 750px;
+           }
+      #bailly{
+            margin-top: 50px;
+            font-size: 18px;
+            }
+      #scott{
+            margin-top: 50px;
+            font-size: 18px;
+            }
+      #ground{
+            margin-top: 50px;
+            font-size: 18px;
+            }
+      #shop{
+            margin-top: 50px;
+            font-size: 18px;
+            }
+      #more{
+            margin-top: 50px;
+            font-size: 18px;
+            }
+      @keyframes ban{
+                      0% {top: 0px;
+                          right: 0px;}
+                      40% {top: 0px;
+                          right: 750px;}
+                      80% {top: 0px;
+                          right: 1500px;}
+                      100% {top: 0px;
+                          right: 0px;}
+                        }
+      #banner{
+              width:750px;
+              height:350px;
+              overflow: hidden;
+              margin: auto;
+              }
+      #mola{
+        width: 2250px;
+        height: 350px;
+            margin: auto;
+            position: relative;
+            animation: ban 15s infinite;
+            border: solid 0px;
+            }
+      #banner > mola > img{
+                          float: center;
+                          }
+      .multiEffect {
+         text-shadow : 2px 2px 2px red, 0 0 25px red, 0 0 5px black;
+         margin-bottom: 30px;
+       }
+    .clear {
+            clear:both;
+           }
+    a{
+      text-decoration: none;
+      color: red;
+    }
+    #shop img{
+      height: 200px;
+      width: 200px;
+    }
+           #wrapper {
+                     width: 1200px;
+                     margin: 0 auto;
+                     }
+  </style>
 </head>
-<body>
+  <body>
     <div id="wrapper">
-        <head>
-            <div id="logo">
-                신뢰를 보답하는 루바토 손해보험
-            </div>
-            <div id = "top">
-                로그인|회원가입|사이트맵|회사소개
-            </div>
-        </head>
-    <div class="clear"> </div>
-    <nav>
-            <ul>
-                <li>손해보험상식</li>
-                <li>회사소개</li>
-                <li>보험상품안내</li>
-                <li>마이페이지</li>
-                <li>고객센터</li>
-                <li>보험료안내</li>
-            </ul>
-    </nav>
-    <div class="clear"> </div>
-    <section>
-        <img src="./img/goo.png">
-    </section>
-    <aside>
-        <ul>
-            <li> 보험료계산하기 </li>
-            <li> 손해보험 FAQ </li>
+    <header>
+      <div id="logo">
+        <a href="index.html"><img src="img/manU.jpg"></a>
+        <a href="index.html"><h1>Manchester.United</h1></a>
+      </div>
+      <ul id="top_menu">
+        <li><a href="login.html">||로그인||</a></li>
+        <li><a href="join.html">||회원가입||</a></li>
+      </ul>
+      <div class="clear"></div>
+        <ul id="main_menu">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="shop.html">SHOP</a></li>
+          <li><a href="player.html">PLAYER</a></li>
+          <li><a href="news.html">NEWS</a></li>
         </ul>
-    </aside>
-    <div class="clear"> </div>
+    </header>
+    <div class="clear"></div>
+    <main>
+      <div class="multiEffect"><h1>We are Red Devils!</h1></div>
+      <div id="banner">
+        <div id="mola">
+        <a href="news.html"><img src="img/ban.jpg" alt=""></a>
+        </div>
+      </div>
+    </main>
+    <div class="clear"></div>
+    <section>
+      <article id="art1">
+        <fieldset>
+          <div class="multiEffect"><h3>Team News</h3></div>
+          <div id="bailly">
+            <img src="img/eric.jpg"><br>
+            <a href="news.html">[공식발표] 에릭 바이, 무릎 부상으로 시즌 아웃...<br>
+            아프리카 네이션스컵도 출전 불가...</a>
+          </div>
+          <div id="scott">
+            <img src="img/mc.jpg"><br>
+          <a href="news.html">[공식발표] 스콧 맥토미나이 4월 이달의 최고의 선수<br>
+           (Player Of the Month)선정</a>
+          </div>
+          <div id=more>
+            더 많은 News를 보고싶으시다면 <a href="news.html">여기</a> 를 눌러 주세요.
+          </div>
+        </fieldset>
+        <fieldset id=one>
+          <div class="multiEffect"><h3>Shoppping</h3></div>
+          <div id="ground">
+            <img src="img/ground.jpg"><br>
+            맨유 홈 경기장 올드 트래포드(old trafford)투어<br>
+            지금 신청하세요!
+          </div>
+          <div id="shop">
+            <img src="img/homekit.png"><br>
+            <a href="shop.html"> 2019년 신상 판매시작!</a>
+          </div>
+          <div id=more>
+            더 많은 상품을 보고싶으시다면 <a href="shop.html">여기</a> 를 눌러 주세요.
+          </div>
+        </fieldset>
+      </article>
+    </section>
+    <div class="clear"></div>
+    <nav>
+    </nav>
+    <div class="clear"></div>
     <footer>
-        <div id="address">
-            대표이사 : 홍길동 | 사업자 등록번호 123-456-7890
-        </div>
-        <div id="customer">
-            고객센터 : 1500-1234
-        </div>
+      <h2>Copyright(C) 2021 Manchester United LTD<h2>
     </footer>
     </div>
-</body>
+  </body>
 </html>
